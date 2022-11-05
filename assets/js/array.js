@@ -113,7 +113,11 @@ const sortData = (arr, sort) => {
     const items = JSON.parse(JSON.stringify(arr));
 
     items.forEach(item => {
-        item.date = 31 - Math.round((Date.now() - Date.parse(item.date)) / (1000 * 3600 * 24))
+        var old = Date.parse(item.date)
+        var kek = Date.now()
+        var data = Math.round((kek - old) / (1000 * 3600 * 24));
+        // var circle = 
+        item.date = 31 - data
     })
 
     items.forEach(item => {
