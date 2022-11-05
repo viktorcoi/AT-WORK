@@ -76,7 +76,7 @@ const items = [
         title: "Просто котятки",
         price: "0",
         photo: ["https://ie.wampi.ru/2022/11/05/BEZ-IMENI-1.png", "https://kartinkof.club/uploads/posts/2022-03/1648326164_31-kartinkof-club-p-mem-nevduplenish-kotenok-33.jpg", "https://avatars.dzeninfra.ru/get-zen_brief/7067868/pub_62fe0840696c5e75fd89bdd5_62fe085db8346d7a59224c6e/lazy_smart_crop_720x356", "https://avatars.mds.yandex.net/get-pdb/1381440/3dc8fe52-add2-420e-8400-d6a9513bd6e8/s1200", "https://cs12.pikabu.ru/post_img/2022/01/24/8/og_og_1643026007253980635.jpg", "https://celes.club/uploads/posts/2021-12/1638591416_1-celes-club-p-ochen-milie-kotyata-do-slyoz-zhivotnie-kra-1.jpg"],
-        date: "2022-11-04",
+        date: "2022-11-05",
         address: "Санкт-Петербург, ст. м. Зениит",
         typeExample: "красивое",
         typePublic: "милое",
@@ -113,11 +113,7 @@ const sortData = (arr, sort) => {
     const items = JSON.parse(JSON.stringify(arr));
 
     items.forEach(item => {
-        var old = Date.parse(item.date)
-        var kek = Date.now()
-        var data = Math.round((kek - old) / (1000 * 3600 * 24));
-        // var circle = 
-        item.date = 31 - data
+        item.date = 31 - Math.round((Date.now() - Date.parse(item.date)) / (1000 * 3600 * 24))
     })
 
     items.forEach(item => {
