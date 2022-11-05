@@ -450,6 +450,7 @@ p {
 }
 
 .slider-photo {
+    object-fit: cover;
     height: 170px;
 }
 
