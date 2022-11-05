@@ -143,11 +143,11 @@ const sortData = (arr, sort) => {
                     <div id="for-photo-${i}" class="for-photo ${item.status ? `moderation` : ``} border-6px pos-relative">
                         <input id="product" class="pos-absolute" type="checkbox"/>
                         ${item.category ? 
-                            `<img class="category-img pos-absolute" src="/assets/img/category-${item.category}.svg"/>` : ""
+                            `<img class="category-img pos-absolute" src="assets/img/category-${item.category}.svg"/>` : ""
                         }
                         ${item.hotmark ? 
                             `<div class="hotmark d-flex pos-absolute">
-                                <img src="/assets/img/${item.hotmark}.svg"/>
+                                <img src="assets/img/${item.hotmark}.svg"/>
                             </div>` : ""
                         }
                         ${item.status ? 
@@ -162,7 +162,7 @@ const sortData = (arr, sort) => {
                         <h3>${item.price == 0 ? "Бесплатно" : `${item.price} ₽`}</h3>
                         ${item.work ? 
                             `<div class="info-company d-flex items-center">
-                                <img src="/assets/img/${item.work.pict}.svg"/>
+                                <img src="assets/img/${item.work.pict}.svg"/>
                                 <div>
                                     <p class="company">${item.work.name}</p>
                                     <p>${item.address}</p>
@@ -182,22 +182,22 @@ const sortData = (arr, sort) => {
                 <div class="d-flex">
                     <div class="info-service">
                         ${item.bid ? 
-                            `<p class="d-flex items-center"><img src="/assets/img/${item.bid.pict}.svg"/>Предложения ${item.bid.bid}</p>` : ""
+                            `<p class="d-flex items-center"><img src="assets/img/${item.bid.pict}.svg"/>Предложения ${item.bid.bid}</p>` : ""
                         }
                         ${item.response ? 
-                            `<p class="d-flex items-center"><img src="/assets/img/${item.response.pict}.svg"/>Отклики ${item.response.oldResponse}&nbsp
+                            `<p class="d-flex items-center"><img src="assets/img/${item.response.pict}.svg"/>Отклики ${item.response.oldResponse}&nbsp
                                 ${item.response.newResponse != 0 ? `<span class="${item.type}">+${item.response.newResponse}</span>` : ""}
                             </p>` : ""
                         }
                         ${item.invites ? 
-                            `<p class="d-flex items-center"><img src="/assets/img/${item.invites.pict}.svg"/>Приглашены ${item.invites.invites}</p>` : ""
+                            `<p class="d-flex items-center"><img src="assets/img/${item.invites.pict}.svg"/>Приглашены ${item.invites.invites}</p>` : ""
                         }
-                        <p class="d-flex items-center"><img src="/assets/img/${item.views.pict}.svg"/>${item.views.views} просмотров</p>
+                        <p class="d-flex items-center"><img src="assets/img/${item.views.pict}.svg"/>${item.views.views} просмотров</p>
                         ${item.favorite ? 
-                            `<p class="d-flex items-center"><img src="/assets/img/${item.favorite.pict}.svg"/>В избранном ${item.favorite.favorite}</p>` : ""
+                            `<p class="d-flex items-center"><img src="assets/img/${item.favorite.pict}.svg"/>В избранном ${item.favorite.favorite}</p>` : ""
                         }
                         ${item.likes ? 
-                            `<p class="d-flex items-center"><img src="/assets/img/${item.likes.pict}.svg"/>Подходят ${item.likes.likes}</p>` : ""
+                            `<p class="d-flex items-center"><img src="assets/img/${item.likes.pict}.svg"/>Подходят ${item.likes.likes}</p>` : ""
                         }
                         <div class="for-percent d-flex items-center">
                             <div class="percent">
@@ -208,17 +208,17 @@ const sortData = (arr, sort) => {
                     </div>
                     <div class="for-buttons d-flex between">
                         <button name="загрузки" onclick='checkClickProduct(${i}, this)' class="quad-btn border-6px d-flex">
-                            <img class="margin-auto" src="/assets/img/up.svg"/>
+                            <img class="margin-auto" src="assets/img/up.svg"/>
                         </button>
                         <button name="карандашика" onclick='checkClickProduct(${i}, this)' class="quad-btn border-6px d-flex">
-                            <img class="margin-auto" src="/assets/img/pen.svg"/>
+                            <img class="margin-auto" src="assets/img/pen.svg"/>
                         </button>
                         <button name="облачка" onclick='checkClickProduct(${i}, this)' class="quad-btn border-6px d-flex">
-                            <img class="margin-auto" src="/assets/img/cloud.svg"/>
+                            <img class="margin-auto" src="assets/img/cloud.svg"/>
                         </button>
                         <div class="three-dots pos-relative">
                             <button id="three-dots" onclick='openSettungs(${i})' class="quad-btn border-6px d-flex">
-                                <img class="margin-auto" src="/assets/img/dots.svg"/>
+                                <img class="margin-auto" src="assets/img/dots.svg"/>
                             </button>
                             <div id="settings-${i}" class="pos-absolute border-6px transition_0_3">
                                 <p onclick='clickOption(${i}, this)' class="transition_0_3 border-6px cursor-pointer">Передать</p>
