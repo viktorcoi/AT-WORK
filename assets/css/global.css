@@ -296,8 +296,8 @@ p {
 }
 
 .quad-btn:hover {
-    filter: brightness(60%);
-    -webkit-filter: brightness(60%);
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
 }
 
 .for-buttons {
