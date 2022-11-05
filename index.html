@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAME</title>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/global.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="/assets/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="/assets/js/array.js"></script>
+    <script src="/assets/js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Все мои объявления</h1>
+        <div class="for-sections pos-relative d-flex">
+            <div class="section pos-relative choose">
+                <input class="d-none" checked name="section" id="active"  type="radio"/>
+                <label class="transition_0_3" for="active">
+                    Активные
+                    <span id="count-active"></span>
+                </label>
+            </div>
+            <div class="section pos-relative">
+                <input class="d-none" name="section" id="archive"  type="radio"/>
+                <label class="transition_0_3" for="archive">
+                    Архив
+                    <span>0</span>
+                </label>
+            </div>
+            <div class="section pos-relative">
+                <input class="d-none" name="section" id="note"  type="radio"/>
+                <label class="transition_0_3" for="note">
+                    Черновики
+                    <span>0</span>
+                </label>
+            </div>
+        </div>
+        <section id="s-active">
+            <div class="d-flex between for-selectors">
+                <div class="d-flex items-center close-public">
+                    <input class="cursor-pointer" id="all-products" type="checkbox"/>
+                    <label class="border-6px" for="all-products">Снять с публикации</label>
+                </div>
+                <div class="d-flex">
+                    <div class="selector count-ad border-6px cursor-pointer pos-relative transition_0_3">
+                        <div tabindex="0" class="d-flex items-center between head-selector transition_0_3">
+                            <input readonly class="select cursor-pointer transition_0_3" value="Все объявления">
+                            <img class="transition_0_3" src="/assets/img/arrow-down.svg" alt="arrow down">
+                        </div>
+                        <div class="optionals transition_0_3 pos-absolute border-6px">
+                            <p class="transition_0_3 border-6px">Все объявления</p>
+                            <p class="transition_0_3 border-6px">Мои объявления</p>
+                            <p class="transition_0_3 border-6px">Твои объявления</p>
+                        </div>
+                    </div>
+                    <div class="selector for-sort border-6px cursor-pointer pos-relative transition_0_3">
+                        <div tabindex="0" class="d-flex items-center between head-selector transition_0_3">
+                            <input id="sort" readonly class="select cursor-pointer transition_0_3" value="По дате публикации ↑">
+                            <img class="transition_0_3" src="/assets/img/arrow-down.svg" alt="arrow down">
+                        </div>
+                        <div class="optionals transition_0_3 pos-absolute border-6px">
+                            <p class="transition_0_3 border-6px">По дате публикации ↑</p>
+                            <p class="transition_0_3 border-6px">По дате публикации ↓</p>
+                            <p class="transition_0_3 border-6px">По цене ↑</p>
+                            <p class="transition_0_3 border-6px">По цене ↓</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="for-ad">
+            </div>
+        </section>
+        <section class="d-none" id="s-archive">
+            <h2>Архв пуст</h2>
+        </section>
+        <section class="d-none" id="s-note">
+            <h2>Черновик пуст</h2>
+        </section>
+    </div>
+</body>
+</html>
