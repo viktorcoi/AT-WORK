@@ -76,7 +76,7 @@ const items = [
         title: "Просто котятки",
         price: "0",
         photo: ["https://ie.wampi.ru/2022/11/05/BEZ-IMENI-1.png", "https://kartinkof.club/uploads/posts/2022-03/1648326164_31-kartinkof-club-p-mem-nevduplenish-kotenok-33.jpg", "https://avatars.dzeninfra.ru/get-zen_brief/7067868/pub_62fe0840696c5e75fd89bdd5_62fe085db8346d7a59224c6e/lazy_smart_crop_720x356", "https://avatars.mds.yandex.net/get-pdb/1381440/3dc8fe52-add2-420e-8400-d6a9513bd6e8/s1200", "https://cs12.pikabu.ru/post_img/2022/01/24/8/og_og_1643026007253980635.jpg", "https://celes.club/uploads/posts/2021-12/1638591416_1-celes-club-p-ochen-milie-kotyata-do-slyoz-zhivotnie-kra-1.jpg"],
-        date: "2022-11-5",
+        date: "2022-11-4",
         address: "Санкт-Петербург, ст. м. Зениит",
         typeExample: "красивое",
         typePublic: "милое",
@@ -169,7 +169,7 @@ const sortData = (arr, sort) => {
                                 </div>
                             </div>` : ""
                         }
-                        ${ item.date <= 0 ? `<p>Время истекло</p>` : `<p>Осталось ${item.date} дней</p>`}
+                        ${item.date <= 0 ? `<p>Время истекло</p>` : `<p>Осталось ${item.date} дней</p>`}
                         ${item.work ? `` : `<p>${item.address}</p>`}
                         ${item.typeExample ? 
                             `<p>Тип задания: ${item.typeExample}</p>` : ""
