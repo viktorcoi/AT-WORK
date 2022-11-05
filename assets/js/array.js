@@ -71,7 +71,7 @@ const items = [
         percent: 78,
     },
     {
-        id: 0,
+        id: 4,
         type: "service",
         title: "Просто котятки",
         price: "0",
