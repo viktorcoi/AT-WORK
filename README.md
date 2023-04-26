@@ -1,4 +1,4 @@
-# AT-WORK
+# Test task AT-WORK
 The test task for the FrontEnd developer vacancy for the AT-WORK company was completed in Html, css, native js.
 - Adaptive layout up to 320px;
 - Cross-browser layout;
