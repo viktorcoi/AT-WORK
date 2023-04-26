@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         chooseOption(SelectorSort, option);
     })
     
-    // закрытие "летающих" элентов при вклике вне
+    // закрытие "летающих" элентов при клике вне
 
     window.addEventListener('click', (e) => {
         const target = e.target
